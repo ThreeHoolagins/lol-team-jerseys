@@ -30,9 +30,10 @@ function myFunction(value, index, array) {
 
 const logViableMap = (map) => {
     var returnList = []
-    for (let [key, value] of map.entries()) {
+    map.forEach((value, key) => {
         if (value > 4) {
-            returnList.push(key);
+            console.log(key)
+            returnList.push(key)
         }
     }
     console.log(returnList);
