@@ -28,15 +28,15 @@ function myFunction(value, index, array) {
     return index == value;
 }
 
-const logViableMap = (map) => {
+const getViableLines = (map) => {
     var returnList = []
     map.forEach((value, key) => {
         if (value > 4) {
             console.log(key)
             returnList.push(key)
         }
-    }
-    console.log(returnList);
+    });
+    return returnList;
 }
 
 const getChampionNames = async () => {
@@ -45,7 +45,6 @@ const getChampionNames = async () => {
     var championDatas = champList.data;
     console.log(championDatas);
     var champsDiv = document.getElementById("champs");
-    champsDiv.innerHTML += ("<p>");
     var champsJson = new Map();
     Object.entries(championDatas).forEach(async championData => {
         var championName = championData[1].name;
@@ -62,12 +61,10 @@ const getChampionNames = async () => {
                 }
             }
         })
+        var viable = getViableLines(champsJson);
+        champsDiv.innerHTML = ("<p>" + viable + "</p>");
     });
-    champsDiv.innerHTML += ("</p>");
     console.log(champsJson);
-    for (let thing in champsJson) {
-        console.log(`${thing}`) 
-    }
 
 
 }
