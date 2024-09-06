@@ -48,7 +48,6 @@ const getChampionNames = async () => {
     var champsJson = new Map();
     Object.entries(championDatas).forEach(async championData => {
         var championName = championData[1].name;
-        // champsDiv.innerHTML += (championName + " <img src=\"https://ddragon.leagueoflegends.com/cdn/img/champion/loading/" + championName + "_2.jpg\">");  
         let champjson = await getSkinLinesForChampion(championName);
         champjson.forEach(value => {
             if (value.name !== "default") {
