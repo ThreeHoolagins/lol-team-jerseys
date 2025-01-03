@@ -1,0 +1,74 @@
+.headerImage {
+    width: 100%;
+    max-width: 1000px;
+    max-height: 5000px;
+    padding-bottom: 4em;
+}
+body { 
+    
+    display: flex;
+    justify-content: center;
+    align-content : center;
+    flex-direction:column;
+    align-items: center;
+    background-image: url("https://ddragon.leagueoflegends.com/cdn/6.8.1/img/map/map11.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.centerText {
+    text-align: center;
+    background-color: goldenrod;
+    padding: 1em;
+    border-radius : 1em;
+    border: 3px;
+    border-color: black;
+    border-style: solid;
+    font-family: "Libre Baskerville", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.mainArea {
+    padding:3em 3em 3em 4em;
+    width: 100%;
+    max-width: 1000px;
+    background-color: #f2f2f2;
+    border-radius : 1em;
+}
+
+.testClass {
+    text-align: center;
+    border-radius : 1em;
+    font-family: "Libre Baskerville", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+img {
+    max-height: 150px;
+}
+
+figcaption {
+  text-align: center;
+  padding: 1px;
+}
+
+
+figure {
+    max-height: 170px;
+    max-width: 25%;
+    display: inline-block;
+    padding: 1em;
+    margin: 1em;
+}
+
+figure:hover {
+    background-color: rgba(0,0,0,.2);
+    border-radius: 1em;
+}
+
+.splash {
+    border-radius: 1em;
+}
