@@ -2,4 +2,4 @@
 
 ## Bug List
 
-- Champions like vel'koz are not being retrieved due to the special chacter, fix
+- Fiddlestick's blood moon skin isn't working, curios that.
