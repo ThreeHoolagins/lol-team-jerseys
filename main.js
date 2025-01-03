@@ -71,7 +71,7 @@ const getChampionNames = async () => {
         console.log(typeof champjson);
         Object.entries(champjson).forEach(value => {
             if (value[1].name !== "default") {
-                var skinLine = value[1].name.replace(championName, "").trim();
+                var skinLine = value[1].name.replace(champDatainfo[1].name, "").trim();
                 if (!champsJson.has(skinLine)) {
                     champsJson.set(skinLine, [[value[1].name.trim(), championName, value[1].num]]);
                 }
