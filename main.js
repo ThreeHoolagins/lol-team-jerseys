@@ -50,7 +50,7 @@ const printViable = (map) => {
         var imageGallery = `<div id=${setter} class="testClass" hidden>`
         value.forEach(skinArr => {
             var skinSplashLink = getSkinSplashArtLink(skinArr[1], skinArr[2]);
-            imageGallery += '<figure>'
+            imageGallery += '<figure class="leagueCard">'
             imageGallery += `<img class="splash" src=\"${skinSplashLink}\">`
             imageGallery += `<figcaption>${skinArr[0]}</figcaption>`
             imageGallery += '</figure>'
